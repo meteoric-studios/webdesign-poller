@@ -6,8 +6,8 @@ import {useEffect, useState} from "react";
 import {Spinner} from "@nextui-org/spinner";
 import {collection, getDocs} from "@firebase/firestore";
 import {firestore} from "@/utils/firebase";
-import {options} from "@/app/page";
 import Image from "next/image";
+import {options} from "@/app/options";
 
 export default function Submissions() {
     const [currentOptions, setCurrentOptions] = useState<number[]>([]);

@@ -11,10 +11,7 @@ import {firestore} from "@/utils/firebase";
 import {addDoc, collection} from "@firebase/firestore";
 import {useRouter} from "next/navigation";
 import Link from "next/link";
-
-export const options = [
-	"1.jpg", "2.png", "3.jpg", "4.png", "5.jpeg", "6.png"
-]
+import {options} from "@/app/options";
 
 export default function Home() {
 	const router = useRouter();
